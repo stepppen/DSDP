@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new comment</title>
+    <script src="addComment.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="header">
+        <h3 class="companyName">Innofactor</h3>
+        <div class="steps">
+            <p class="step">Step 1</p>
+            <div class="biggerThan">></div>
+            <p class="step">Step 2</p>
+            <div class="biggerThan">></div>
+            <p class="step">Step 3</p>
+            <div class="biggerThan">></div>
+            <p class="step">Step 4</p>
+        </div>
+        <div class="user"></div>
+
+    </div>
+    <div class="wrapper">
+        <div class="content-container">
+            <h1>Add Task</h1>
+            <div class="inputLine">
+                <textarea id="new-comment" cols="40" rows="1"></textarea>
+                <button id="btn-post">Add</button>
+            </div>
+            <span id="emailwarning" class="userinput hidden">No task added</span>
+            <div class="container-wrapper">
+                <div class="comment-container">
+                    <div class="settingsPopup hidden">
+                        <button class="deleteBtn">Delete</button>
+                        <button class="deleteBtn">Modify</button>
+                        <!-- <button class="deleteBtn">Delete task</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --dark-grey: #333B47;
+    --torquoise: #4DBAC0;
+    --torquoise-hovered: #45a7ac;
+    --button-hovered: #f5f5f5;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.companyName{
+    color: white;
+}
+
+.biggerThan{
+    color: white;
+}
+
+.header{
+    background-color: var(--dark-grey);
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.step{
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: rgb(229, 229, 229);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user{
+    border-radius: 50px;
+    background-color: rgb(184, 184, 184);
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.wrapper {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    margin: auto;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px; 
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+.comment-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+#new-comment {
+    resize: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+.individualComment {
+    /* width: 80%; */
+    min-width: 100%; 
+    word-wrap: break-word;
+    /* flex-wrap: wrap; */
+    padding: 10px 20px;
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modButton, .completeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 10%;
+    border-radius: 5px;
+}
+
+.modButton {
+    /* background-color: rgb(230, 230, 230); */
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    /* border: 1px solid #ccc; */
+    border: none;
+    display: flex;
+    /* padding: auto; */
+    /* margin: 5px; */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+    height: 40px;
+
+}
+
+.modButton:hover {
+    /* background-color: rgb(234, 234, 234); */
+    color: black;
+}
+
+.completeButton {
+    /* background-color: rgb(13, 210, 75); */
+    background-color: white;
+    color: grey;
+    border: none;
+    display: flex;
+    /* height: 100%; */
+    /* padding: auto; */
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+    height: 40px;
+}
+
+.taskCompleted{
+    background-color: rgb(224, 224, 224);
+    /* color: white; */
+}
+
+.completeButton:hover {
+    /* background-color: var(--button-hovered); */
+    color: black;
+}
+
+
+.container-wrapper {
+    margin: 40px 0;
+    width: 100%;
+}
+
+.inputLine {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#emailwarning.hidden {
+    visibility: hidden;
+    display: inline-block;
+    
+}
+
+#emailwarning {
+    color: #f55;
+    font-size: 0.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#btn-post{
+    flex-direction: column;
+    background-color: var(--torquoise);
+    color: white;
+    border: none;
+    padding: 0 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: center;
+}
+#btn-post:hover{
+    background-color: var(--torquoise-hovered);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.settingsPopup{
+    background-color: white;
+    padding: 5px 10px;
+    border: black 1px solid;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.deleteBtn{
+    background-color: white;
+    border: none;
+    color: grey;
+}
+
+.deleteBtn:hover{
+    /* background-color: red; */
+    color: black;
+}
+
+
+.hidden{
+    display: none;
+}
