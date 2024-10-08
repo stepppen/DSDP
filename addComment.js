@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const newComment = document.getElementById("new-comment").value;
         let warning = document.querySelector("#emailwarning");
 
-        if(newComment !== ""){
+        if (newComment !== "") {
             let commentContainer = document.querySelector(".comment-container");
             let commentWrapper = document.createElement("div");
             commentWrapper.classList.add("comment-item-wrapper");
@@ -34,26 +34,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
             document.getElementById("new-comment").value = "";
             warning.classList.add("hidden");
-        }else{
+        } else {
             warning.classList.remove("hidden");
         }
 
         let completedState = document.querySelector(".completeButton");
-        completedState.addEventListener("click", function(){
+        completedState.addEventListener("click", function () {
             let commentSection = document.querySelector(".comment-item-wrapper");
             commentSection.classList.add("taskCompleted")
         })
 
         let modState = document.querySelector(".modButton");
-        modState.addEventListener("change", function(){
+        modState.addEventListener("change", function () {
             let commentSection = document.querySelector(".settingsPopup");
 
-            if(modState.checked){
+            if (modState.checked) {
                 commentSection.classList.remove("hidden")
-            }else{
+            } else {
                 commentSection.classList.add("hidden")
             }
         });
+        //opekfosefopek
 
     });
 });
