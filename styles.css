@@ -149,7 +149,8 @@ p{
 }
 
 .taskCompleted{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(209, 252, 193);
+    color: grey;
     /* color: white; */
 }
 
@@ -221,13 +222,13 @@ p{
     gap: 5px;
 }
 
-.deleteBtn{
+.popupBtn{
     background-color: white;
     border: none;
     color: grey;
 }
 
-.deleteBtn:hover{
+.popupBtn:hover{
     /* background-color: red; */
     color: black;
 }
