@@ -8,26 +8,26 @@ window.addEventListener("DOMContentLoaded", () => {
         if (newComment.trim() !== "") {
             const commentContainer = document.querySelector(".comment-container");
 
-            // Create wrapper
+            // wrapper
             const commentWrapper = document.createElement("div");
             commentWrapper.classList.add("comment-item-wrapper");
 
-            // Create comment element
+            // comment element
             const commentElement = document.createElement("div");
             commentElement.classList.add("individualComment");
             commentElement.innerHTML = newComment;
 
-            // Create modButton
+            // modButton
             const commentButton = document.createElement("button");
             commentButton.classList.add("modButton");
             commentButton.innerHTML = '<span class="material-symbols-outlined">more_vert</span>';
 
-            // Create completeButton
+            // completeButton
             const completeButton = document.createElement("button");
             completeButton.classList.add("completeButton");
             completeButton.innerHTML = '<i class="material-symbols-outlined">check_circle</i>';
 
-            // Create settingsPopup
+            // settingsPopup
             const settingsPopup = document.createElement("div");
             settingsPopup.classList.add("settingsPopup", "hidden");
             settingsPopup.innerHTML = `
@@ -59,5 +59,18 @@ window.addEventListener("DOMContentLoaded", () => {
         } else {
             warning.classList.remove("hidden");
         }
+    });
+
+
+    let addBTN = document.querySelector(".addUsers");
+    addBTN.addEventListener("click", function () {
+        let userOverlay = document.querySelector(".overlay-wrapper");
+        userOverlay.classList.remove("hidden");
+    });
+
+    let confirmBTN = document.querySelector(".confirmUsers");
+    confirmBTN.addEventListener("click", function () {
+        let userOverlay = document.querySelector(".overlay-wrapper");
+        userOverlay.classList.add("hidden");
     });
 });

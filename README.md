@@ -2,6 +2,6 @@
 
 ## Groups:
 
-# Eeva & Stepan
+# Akanksha & Stepan
 
-# Lucas & Akanksha
+# Lucas & Eeva

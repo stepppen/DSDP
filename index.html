@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <div class="overlay-wrapper hidden">
+        <div class="overlay">
+            <div class="overlay-header">
+                <h3>Invite users</h3>
+                <span class="material-symbols-outlined closeIcon">close</span>
+            <button class="confirmUsers">Invite</button>
+        </div>
+    </div>
     <div class="header">
         <h3 class="companyName">Innofactor</h3>
         <div class="steps">
@@ -20,23 +28,26 @@
             <div class="biggerThan">></div>
             <p class="step">Step 4</p>
         </div>
-        <div class="user"></div>
+        <div class="users-wrapper">
+            <div class="user"></div>
+            <button class="addUsers"><span class="material-symbols-outlined plusIcon">add_circle</span></button>
+        </div>
     </div>
 
     <div class="wrapper">
         <div class="content-container">
-            <h1>Add Task</h1>
             <div class="inputLine">
-                <textarea id="new-comment" cols="40" rows="1"></textarea>
+                <textarea placeholder="Add task, comment, question, ..." id="new-comment" cols="40" rows="1"></textarea>
                 <button id="btn-post">Add</button>
             </div>
             <span id="emailwarning" class="userinput hidden">No task added</span>
             <div class="container-wrapper">
                 <div class="comment-container">
-                    <!-- Dynamically added comments will appear here -->
                 </div>
             </div>
         </div>
     </div>
+
+
 </body>
 </html>
