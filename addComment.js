@@ -62,15 +62,38 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    let confirmBTN = document.querySelector(".closeBTN");
+    confirmBTN.addEventListener("click", function () {
+        let userOverlay = document.querySelector(".collab-overlay-wrapper");
+        userOverlay.classList.add("hidden");
+    });
+
+
     let addBTN = document.querySelector(".addUsers");
     addBTN.addEventListener("click", function () {
-        let userOverlay = document.querySelector(".overlay-wrapper");
+        let userOverlay = document.querySelector(".collab-overlay-wrapper");
         userOverlay.classList.remove("hidden");
     });
 
-    let confirmBTN = document.querySelector(".confirmUsers");
-    confirmBTN.addEventListener("click", function () {
-        let userOverlay = document.querySelector(".overlay-wrapper");
+    let inviteBTN = document.querySelector(".confirmUsers");
+    inviteBTN.addEventListener("click", function () {
+        let inviteOverlay = document.querySelector(".invite-overlay-wrapper");
+        let userOverlay = document.querySelector(".collab-overlay-wrapper");
         userOverlay.classList.add("hidden");
+        inviteOverlay.classList.remove("hidden");
+        
     });
+
+    let backBTN = document.querySelector(".backBTN");
+    backBTN.addEventListener("click", function () {
+        let inviteOverlay = document.querySelector(".invite-overlay-wrapper");
+        let userOverlay = document.querySelector(".collab-overlay-wrapper");
+        inviteOverlay.classList.add("hidden");
+        userOverlay.classList.remove("hidden");
+        
+        
+    });
+
+
+
 });

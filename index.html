@@ -6,15 +6,73 @@
     <title>Add new comment</title>
     <script src="addComment.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="overlay-wrapper hidden">
+    <div class="collab-overlay-wrapper hidden">
         <div class="overlay">
             <div class="overlay-header">
-                <h3>Invite users</h3>
-                <span class="material-symbols-outlined closeIcon">close</span>
-            <button class="confirmUsers">Invite</button>
+                <h3>Collaborators</h3>
+                <button class="closeBTN">
+                    <span class="material-symbols-outlined closeIcon">close</span>
+                </button>
+                
+            </div>
+            <div class="divider"></div>
+            <div class="collabWrapper">
+                <div class="collaboratorItem">
+                    <div class="iconText">
+                        <div class="collaborator-icon"></div>
+                        <p class="collaborator-name">Salla (You)</p>
+                    </div>
+                    <span class="material-symbols-outlined closeIcon">more_vert</span>  
+                </div>
+                
+            </div>
+            <div class="footer">
+                <button class="confirmUsers">
+                    <span class="material-symbols-outlined inviteIcon">person_add</span>  
+                    <p>Invite</p>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="invite-overlay-wrapper hidden">
+        <div class="overlay">
+            <div class="overlay-header">
+                <div class="iconText">
+                    <button class="backBTN">
+                        <span class="material-symbols-outlined closeIcon">chevron_left</span>
+                    </button>
+                    <h3>Invite</h3>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="collabWrapper">
+                <div class="contactInfo">   
+                    <p>Invite people to collaborate on this task</p>
+                    <div class="enterUserInfo">
+                        <p>Name</p>
+                        <textarea class="userInfo" name="Name" id="" cols="40" rows="1"></textarea>
+                    </div>
+                    <div class="enterUserInfo">
+                        <p>Email</p>
+                        <textarea class="userInfo" name="Email" id="" cols="40" rows="1"></textarea>
+                    </div>
+                    <div class="enterUserInfo">
+                        <p>Party</p>
+                        <textarea class="userInfo" name="Party" id="" cols="40" rows="1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="confirmUsers">
+                    <span class="material-symbols-outlined inviteIcon">person_add</span>  
+                    <p>Invite</p>
+                </button>
+            </div>
         </div>
     </div>
     <div class="header">
@@ -37,7 +95,7 @@
     <div class="wrapper">
         <div class="content-container">
             <div class="inputLine">
-                <textarea placeholder="Add task, comment, question, ..." id="new-comment" cols="40" rows="1"></textarea>
+                <textarea placeholder="Add task..." id="new-comment" cols="40" rows="1"></textarea>
                 <button id="btn-post">Add</button>
             </div>
             <span id="emailwarning" class="userinput hidden">No task added</span>
