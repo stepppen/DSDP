@@ -52,26 +52,27 @@
             <div class="divider"></div>
             <div class="collabWrapper">
                 <div class="contactInfo">   
-                    <p>Invite people to collaborate on this task</p>
+                    <!-- <p>Invite people to collaborate on this task</p> -->
                     <div class="enterUserInfo">
                         <p>Name</p>
-                        <textarea class="userInfo" name="Name" id="" cols="40" rows="1"></textarea>
+                        <textarea id="firstArea" class="userInfo" name="Name" id="" cols="40" rows="1"></textarea>
                     </div>
                     <div class="enterUserInfo">
                         <p>Email</p>
-                        <textarea class="userInfo" name="Email" id="" cols="40" rows="1"></textarea>
+                        <textarea id="secondArea" class="userInfo" name="Email" id="" cols="40" rows="1"></textarea>
                     </div>
                     <div class="enterUserInfo">
                         <p>Party</p>
-                        <textarea class="userInfo" name="Party" id="" cols="40" rows="1"></textarea>
+                        <textarea id="thirdArea" class="userInfo" name="Party" id="" cols="40" rows="1"></textarea>
                     </div>
                 </div>
             </div>
             <div class="footer">
-                <button class="confirmUsers">
-                    <span class="material-symbols-outlined inviteIcon">person_add</span>  
-                    <p>Invite</p>
+                <button id="sendBTN" class="confirmUsers">
+                    <!-- <span class="material-symbols-outlined inviteIcon">person_add</span>   -->
+                    <p>Send</p>
                 </button>
+                <span id="userwarning" class="userinput hidden">Make sure to fill out all fields</span>
             </div>
         </div>
     </div>

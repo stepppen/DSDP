@@ -189,6 +189,16 @@ p{
     color: #f55;
     font-size: 0.8rem;
 }
+#userwarning {
+    color: #f55;
+    font-size: 0.8rem;
+}
+
+#userwarning.hidden {
+    visibility: hidden;
+    display: inline-block;
+    
+}
 
 .hidden {
     visibility: hidden;
@@ -229,6 +239,9 @@ p{
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
+}
+.collaboratorItem:hover{
+    background-color: #f5f5f5;
 }
 
 .popupBtn{
